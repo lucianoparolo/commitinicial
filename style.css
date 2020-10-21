@@ -1,0 +1,233 @@
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+
+
+h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+h2{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 550;
+}
+
+.parrafo-blanco{
+    color: white;
+    font-size: 30px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.parrafo-negro{
+    color: black;
+    font-size: 30px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+section{
+    padding: 100px 0;
+}
+
+.topmargin-xs{margin-top: 15px;}
+.topmargin-sm{margin-top: 30px;}
+.topmargin-lg{margin-top: 60px;}
+
+/* barra de menu */
+
+.navbar{
+    background-color: black;
+    box-shadow: 0 2px 4px 0 rgba(0, 0,0,0.05);
+    min-height: 70px;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: yellow;
+}
+
+.instagram{
+    color: black;
+}
+
+.instagram:hover{
+    text-decoration: none;
+    color: black;
+    font-weight: 600    ;
+}
+
+.logo-nav{
+    min-width: 160px;
+    max-width: 180px;
+}
+
+.navbar-toggler {
+    font-size: 40px;
+    color: white;
+}
+
+.navbar-toggler:focus{
+    outline: none;
+}
+.dropdown-menu{
+    background-color: black;
+}
+
+.dropdown-item{
+    color: white;
+}
+
+/* comienza hero */
+
+#hero{
+    width: 100%;
+    min-height: 800px;
+    background: #bdc3c7;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e506c, #bdc3c76e), url('images/fondo.jpg');  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e506c, #bdc3c76e), url('images/fondos/fondo.jpg'); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    padding-top: 90px;
+    background-size: cover;
+
+}
+
+.content-center{
+    max-width: 800px;
+    margin: 0 auto 60px auto;
+    text-align: center;
+
+}
+
+/* comienza tips */
+
+.tips{
+    background: #ADA996;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+
+}
+
+/* comienza estilo urbano */
+
+
+.h2-blanco{
+    color: white;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 550;
+
+}
+
+/* galeria urbana */
+
+.galeria-urbana img{
+    padding: 10px;
+    width: 100%;
+    height: 850px;
+}
+
+.galeria-es img{
+    padding: 10px;
+    width: 100%;
+    height: 750px;
+}
+
+/* galeria formal */
+.galeria-formal img{
+    padding: 10px;
+    width: 100%;
+    height: 700px;
+}
+
+
+.elegantesport{
+    background: #ADA996;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+.hairstyles{
+    background: #ADA996;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996);  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAEAEA, #DBDBDB, #F2F2F2, #ADA996); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.galeria-hairstyles img{
+    padding: 10px;
+    width: 100%;
+    height: 500px;
+}
+
+/* contacto */
+
+.header {
+    color: black;
+    font-size: 50px;
+    margin-bottom: 30px;
+    font-weight: 550;
+}
+
+.bigicon {
+    font-size: 35px;
+    color: black;
+}
+
+/* footer */
+
+.footer{
+    background-color: black;
+}
+
+.white{
+    color: white;
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+.footer a{
+    text-decoration: none;
+    color: white;
+}
+
+.footer a:hover{
+    font-weight: 600;
+}
+
+.contactos{
+    width: 100%;
+    min-height: 800px;
+    background: #bdc3c7;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e506c, #bdc3c76e), url('images/fondo.jpg');  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e506c, #bdc3c76e), url('images/fondocontacto.jpg'); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-attachment: fixed;
+    padding-top: 90px;
+    background-size: cover;
+}

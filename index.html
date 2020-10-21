@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+
+    <title>ParoloZampieri</title>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#hero"><img src="images/parolozampierilogo.png" class="logo-nav" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hero">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tips">TIPS</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="estilos">
+                            ESTILOS
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#urbano">Urbano</a>
+                            <a class="dropdown-item" href="#elegantesport">Elegante Sport</a>
+                            <a class="dropdown-item" href="#formal">Formal</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hairstyles">HAIRSTYLES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id=hero>
+        <div class="container">
+            <div class="content-center topmargin-lg">
+                <h1>Moda Masculina</h1>   
+                <p class="parrafo-blanco">
+                    "No hay segundas oportunidades para primeras impresiones." <br>
+                    Te enseñamos a vestirte para destacar. <br>
+                    La elegancia como estilo de vida <br>
+                    Consejos de moda.
+                </p>     
+            </div>
+        </div>
+    </section>
+
+<!-- comienza tips -->
+
+    <section class="tips" id="tips">
+        <div class="container-fluid">
+            <div class="content-center">
+                <h2>Tips de moda</h2>
+                <p class="parrafo-negro">Estos son algunos de los tips que compartimos todas las semanas en instagram. <br>
+                <a class="instagram" href="https://www.instagram.com/parolozampieri/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon> ParoloZampieri</a></p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="card-columns" id="galeria">
+                <div class="card">
+                    <a href="#" data-toggle="modal" data-target="#exampleModal">
+                        <img src="images/tips/1.jpeg" alt="tip" class="card-img-top">   
+                    </a>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <img src="images/tips/1.jpeg" class="img-fluid rounded">
+
+                    </div>
+                </div>
+
+                <script>
+                    var imagenes= [4,8,19,2,5,9,23,3,7,10,29];
+                    var galeria= document.getElementById('galeria');
+
+                    for(imagen of imagenes){
+                        galeria.innerHTML += `
+                        <div class="card">
+                    <a href="#" data-toggle="modal" data-target="#id${imagen}">
+                        <img src="images/tips/${imagen}.jpeg" alt="tip" class="card-img-top">   
+                    </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="id${imagen}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <button type="button" class="close mr-2" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                            <img src="images/tips/${imagen}.jpeg" class="img-fluid rounded">
+
+                        </div>
+                    </div>
+                        `
+                    }
+                </script>
+
+
+            </div>
+        </div>
+
+    </section>
+
+<!-- comienza urbano -->
+
+    <section class="estilo-urbano" id="urbano">
+        <div class="content-center">
+            <h2>Urbano</h2>
+            <p class="parrafo-negro">Outfits casuales, para el dia a dia.</p>
+        </div>
+        <div class="container">
+            <div class="galeria-urbana">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/1.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/2.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/3.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/4.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/5.jpg">
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-sm-12">
+                        <img src="images/urbano/6.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--comienza elegantesport-->
+
+<section class="elegantesport" id="elegantesport">
+    <div class="content-center">
+        <h2>Elegante Sport</h2>
+        <p class="parrafo-negro">Outfits con mas presencia, se pueden usar para salir a trabajar o incluso para fiestas o eventos.</p>
+    </div>
+    <div class="container">
+        <div class="galeria-es">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto1.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto 2.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto 3.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto 4.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto 5.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/elegantesport/foto 6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- comienza formal -->
+
+<section class="formal" id="formal">
+    <div class="content-center">
+        <h2>Formal</h2>
+        <p class="parrafo-negro">Estilo, clase, elegancia.</p>
+    </div>
+    <div class="container">
+        <div class="galeria-formal">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto1.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto 2.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto 3.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto 4.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto 5.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/formal/foto 6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- comienza hairstyles -->
+
+<section class="hairstyles" id="hairstyles">
+    <div class="content-center">
+        <h2>Hairstyles</h2>
+        <p class="parrafo-negro">Algunos looks para que puedas inspirarte.</p>
+    </div>
+    <div class="container">
+        <div class="galeria-hairstyles">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle1.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle2.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle3.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle4.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle5.jpg">
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <img src="images/hairstyles/hairstyle6.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- contacto -->
+
+<section class="contactos" id="contacto">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="well well-sm">
+                <form class="form-horizontal" method="post">
+                    <fieldset>
+                        <legend class="text-center header">Contactanos!</legend>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="fname" name="name" type="text" placeholder="Nombre" class="form-control">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-phone-square bigicon"></i></span>
+                            <div class="col-md-8">
+                                <input id="phone" name="phone" type="text" placeholder="Telefono" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                            <div class="col-md-8">
+                                <textarea class="form-control" id="message" name="message" placeholder="Mensaje" rows="7"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-12 text-center">
+                                <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Footer -->
+<footer class="footer">
+
+    <div class="footer-copyright text-center py-3 white">Seguinos en instagram:
+      <a href="https://www.instagram.com/parolozampieri/?hl=es-la"><ion-icon name="logo-instagram"></ion-icon> Parolo-Zampieri</a>
+    </div>
+
+ </footer>
+  
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!-- ionicons -->
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+</body>
+
+</html>
